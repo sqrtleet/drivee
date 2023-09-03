@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87b8887a0ec36ab7a780dda745b46d42 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87b8887a0ec36ab7a780dda745b46d42" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87b8887a0ec36ab7a780dda745b46d42 = L.map(
+                "map_87b8887a0ec36ab7a780dda745b46d42",
+                {
+                    center: [61.980837, 129.653896],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_661a01dc03715077c2154cc1895f7363 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var marker_6966b28220e9a096035fb1b0cc90e448 = L.marker(
+                [61.980837, 129.653896],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            marker_6966b28220e9a096035fb1b0cc90e448.bindTooltip(
+                `<div>
+                     Start
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0226a38b084fd31eb2bfe9ea6a5222c = L.marker(
+                [62.009191, 129.67732],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            marker_d0226a38b084fd31eb2bfe9ea6a5222c.bindTooltip(
+                `<div>
+                     End
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64c05b4ddd7f0ad76955cbb418f4f828 = L.marker(
+                [62.005583, 129.681952],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_5a487a70e4cdbbe7ccba3cab74edf4bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64c05b4ddd7f0ad76955cbb418f4f828.setIcon(icon_5a487a70e4cdbbe7ccba3cab74edf4bc);
+        
+    
+        var popup_84e953f765761de4cf3f0d4acd252345 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dd9c74a486409be106e26662b12892e = $(`<div id="html_9dd9c74a486409be106e26662b12892e" style="width: 100.0%; height: 100.0%;">Расстояние до заказа: 1538.67 м. Расстояние заказа: 868.11 м. Расстояние до точки Б: 4531.20 м.</div>`)[0];
+                popup_84e953f765761de4cf3f0d4acd252345.setContent(html_9dd9c74a486409be106e26662b12892e);
+            
+        
+
+        marker_64c05b4ddd7f0ad76955cbb418f4f828.bindPopup(popup_84e953f765761de4cf3f0d4acd252345)
+        ;
+
+        
+    
+    
+            marker_64c05b4ddd7f0ad76955cbb418f4f828.bindTooltip(
+                `<div>
+                     Заказ №2 начало
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a03180a258826dbfb56beec79c54856 = L.marker(
+                [62.009347, 129.680248],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_d608e93515642292fd617c3386836ef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a03180a258826dbfb56beec79c54856.setIcon(icon_d608e93515642292fd617c3386836ef7);
+        
+    
+            marker_7a03180a258826dbfb56beec79c54856.bindTooltip(
+                `<div>
+                     Заказ №1 конец
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46669ac53f2f2c79a96eb21dcda37825 = L.marker(
+                [61.98542, 129.677769],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_7eed1b88fe147cac2f2939ea2176a44d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46669ac53f2f2c79a96eb21dcda37825.setIcon(icon_7eed1b88fe147cac2f2939ea2176a44d);
+        
+    
+        var popup_b3cfd2e4ff1d3d93fae8b9357871424d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90ca53938d2685fcf7df5057b60d908f = $(`<div id="html_90ca53938d2685fcf7df5057b60d908f" style="width: 100.0%; height: 100.0%;">Расстояние до заказа: 3970.13 м. Расстояние заказа: 493.11 м. Расстояние до точки Б: 4575.95 м.</div>`)[0];
+                popup_b3cfd2e4ff1d3d93fae8b9357871424d.setContent(html_90ca53938d2685fcf7df5057b60d908f);
+            
+        
+
+        marker_46669ac53f2f2c79a96eb21dcda37825.bindPopup(popup_b3cfd2e4ff1d3d93fae8b9357871424d)
+        ;
+
+        
+    
+    
+            marker_46669ac53f2f2c79a96eb21dcda37825.bindTooltip(
+                `<div>
+                     Заказ №1 начало
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e681a55f85d0cab9bbe90be9a4317ad2 = L.marker(
+                [61.992816, 129.685136],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_a81034c65012d39dd3ba6542417d579c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e681a55f85d0cab9bbe90be9a4317ad2.setIcon(icon_a81034c65012d39dd3ba6542417d579c);
+        
+    
+            marker_e681a55f85d0cab9bbe90be9a4317ad2.bindTooltip(
+                `<div>
+                     Заказ №0 конец
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8200d349a6aa529f49a994b9cb7bc9be = L.marker(
+                [61.999908, 129.690471],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_5975bf43aeeb3520522e105eccb25c71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8200d349a6aa529f49a994b9cb7bc9be.setIcon(icon_5975bf43aeeb3520522e105eccb25c71);
+        
+    
+        var popup_3ba20b9aaa05a2ce21351d2f154c059b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31898bdd8728936a5edecd48566d9933 = $(`<div id="html_31898bdd8728936a5edecd48566d9933" style="width: 100.0%; height: 100.0%;">Расстояние до заказа: 3392.15 м. Расстояние заказа: 1937.20 м. Расстояние до точки Б: 5724.09 м.</div>`)[0];
+                popup_3ba20b9aaa05a2ce21351d2f154c059b.setContent(html_31898bdd8728936a5edecd48566d9933);
+            
+        
+
+        marker_8200d349a6aa529f49a994b9cb7bc9be.bindPopup(popup_3ba20b9aaa05a2ce21351d2f154c059b)
+        ;
+
+        
+    
+    
+            marker_8200d349a6aa529f49a994b9cb7bc9be.bindTooltip(
+                `<div>
+                     Заказ №3 начало
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_713dd62922e5f34fbb66185786cd9ed9 = L.marker(
+                [62.010227, 129.682359],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_c1b9d1358235fd2fda18427b20c0180c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_713dd62922e5f34fbb66185786cd9ed9.setIcon(icon_c1b9d1358235fd2fda18427b20c0180c);
+        
+    
+            marker_713dd62922e5f34fbb66185786cd9ed9.bindTooltip(
+                `<div>
+                     Заказ №2 конец
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_666aea76ea191df9feb3740789d69726 = L.marker(
+                [62.011391, 129.695186],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_1b653ed60085c2b602974599848a9cfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_666aea76ea191df9feb3740789d69726.setIcon(icon_1b653ed60085c2b602974599848a9cfc);
+        
+    
+        var popup_d06a631935e92471201c7e1087fb391e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_052f2405207cf398504c97945b444956 = $(`<div id="html_052f2405207cf398504c97945b444956" style="width: 100.0%; height: 100.0%;">Расстояние до заказа: 4710.56 м. Расстояние заказа: 1213.12 м. Расстояние до точки Б: 6292.33 м.</div>`)[0];
+                popup_d06a631935e92471201c7e1087fb391e.setContent(html_052f2405207cf398504c97945b444956);
+            
+        
+
+        marker_666aea76ea191df9feb3740789d69726.bindPopup(popup_d06a631935e92471201c7e1087fb391e)
+        ;
+
+        
+    
+    
+            marker_666aea76ea191df9feb3740789d69726.bindTooltip(
+                `<div>
+                     Заказ №4 начало
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2ff23e17200459bdabbb617744bbbe9 = L.marker(
+                [62.008179, 129.683365],
+                {}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var icon_bc8f6125ebc62e619c62555e91b6b906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c2ff23e17200459bdabbb617744bbbe9.setIcon(icon_bc8f6125ebc62e619c62555e91b6b906);
+        
+    
+            marker_c2ff23e17200459bdabbb617744bbbe9.bindTooltip(
+                `<div>
+                     Заказ №3 конец
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9b7a5aa5ba162a21fe81aaa861df9e8b = L.polyline(
+                [[61.9805476, 129.6550287], [61.9822778, 129.6572252], [61.9809111, 129.6653228], [61.9824124, 129.6714646], [61.9824194, 129.6721049], [61.982662, 129.6723712], [61.9843321, 129.6757008], [61.9844518, 129.6759407], [61.9855456, 129.6781336], [61.9876851, 129.6814031], [61.9915425, 129.6843119], [61.9925598, 129.6850931], [61.9935606, 129.6858664], [61.9943089, 129.6864404], [61.9997701, 129.6825607], [62.0006157, 129.6822748], [62.0011493, 129.6820908], [62.0038949, 129.6812106], [62.0061022, 129.6823329], [62.0061022, 129.6823329], [62.0072736, 129.6830794], [62.0077678, 129.683328], [62.0085965, 129.6786092], [62.0088321, 129.6791298], [62.0088321, 129.6791298], [62.0087842, 129.6786055], [62.0091001, 129.677948], [62.0091176, 129.6777825], [62.009113, 129.6777259], [62.0092066, 129.6773141]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var poly_line_8cfdc1ca34c9050809184f49df67c612 = L.polyline(
+                [[61.9805476, 129.6550287], [61.9822778, 129.6572252], [61.9809111, 129.6653228], [61.9824124, 129.6714646], [61.9824194, 129.6721049], [61.982662, 129.6723712], [61.9843321, 129.6757008], [61.9844518, 129.6759407], [61.9855456, 129.6781336], [61.9855456, 129.6781336], [61.9876851, 129.6814031], [61.9915425, 129.6843119], [61.9925598, 129.6850931], [61.9925598, 129.6850931], [61.9935606, 129.6858664], [61.9943089, 129.6864404], [61.9997701, 129.6825607], [62.0006157, 129.6822748], [62.0011493, 129.6820908], [62.0038949, 129.6812106], [62.0061022, 129.6823329], [62.0072736, 129.6830794], [62.0077678, 129.683328], [62.0085965, 129.6786092], [62.0087842, 129.6786055], [62.0091001, 129.677948], [62.0091176, 129.6777825], [62.009113, 129.6777259], [62.0092066, 129.6773141]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var poly_line_330866a04cdb98f24bc3b6e0577ba400 = L.polyline(
+                [[61.9805476, 129.6550287], [61.9822778, 129.6572252], [61.9809111, 129.6653228], [61.9824124, 129.6714646], [61.9824194, 129.6721049], [61.982662, 129.6723712], [61.9843321, 129.6757008], [61.9844518, 129.6759407], [61.9855456, 129.6781336], [61.9876851, 129.6814031], [61.9915425, 129.6843119], [61.9925598, 129.6850931], [61.9935606, 129.6858664], [61.9943089, 129.6864404], [61.9993269, 129.6902498], [62.0004435, 129.6907522], [62.0002813, 129.6896705], [62.0002813, 129.6896705], [62.0004435, 129.6907522], [62.0014935, 129.6911921], [62.001249, 129.6852681], [62.0006076, 129.6849832], [61.9999066, 129.6847255], [62.0000195, 129.6831618], [62.0004553, 129.6832076], [62.0006157, 129.6822748], [62.0011493, 129.6820908], [62.0038949, 129.6812106], [62.0061022, 129.6823329], [62.0072736, 129.6830794], [62.0077678, 129.683328], [62.0104655, 129.6832642], [62.0104655, 129.6832642], [62.0088321, 129.6791298], [62.0087842, 129.6786055], [62.0091001, 129.677948], [62.0091176, 129.6777825], [62.009113, 129.6777259], [62.0092066, 129.6773141]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+    
+            var poly_line_0f895ac6dd3ce85fefcb3e3c88289293 = L.polyline(
+                [[61.9805476, 129.6550287], [61.9822778, 129.6572252], [61.9809111, 129.6653228], [61.9824124, 129.6714646], [61.9824194, 129.6721049], [61.982662, 129.6723712], [61.9843321, 129.6757008], [61.9844518, 129.6759407], [61.9855456, 129.6781336], [61.9876851, 129.6814031], [61.9915425, 129.6843119], [61.9925598, 129.6850931], [61.9935606, 129.6858664], [61.9943089, 129.6864404], [61.9993269, 129.6902498], [62.0004435, 129.6907522], [62.0014935, 129.6911921], [62.0026499, 129.6916778], [62.0029204, 129.6917899], [62.0061056, 129.6931246], [62.0125987, 129.6958655], [62.0125987, 129.6958655], [62.0137781, 129.696414], [62.0112207, 129.6860525], [62.0104655, 129.6832642], [62.0077678, 129.683328], [62.0077678, 129.683328], [62.0085965, 129.6786092], [62.0087842, 129.6786055], [62.0091001, 129.677948], [62.0091176, 129.6777825], [62.009113, 129.6777259], [62.0092066, 129.6773141]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_87b8887a0ec36ab7a780dda745b46d42);
+        
+</script>
+</html>
